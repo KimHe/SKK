@@ -1,11 +1,11 @@
 # LaTex Makefile
 
-FILE = note
+FILE = skk
 
 #all: pdf view vim clean
 
 pdf: $(FILE).tex
-	pdflatex -no-shell-escape -interaction=nonstopmode $(FILE).tex
+	pdflatex $(FILE).tex
 
 view: 
 	evince $(FILE).pdf &
